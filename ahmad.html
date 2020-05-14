@@ -3,15 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmad Abo Abdo</title>
+    <title>Pro King Abo Abdo</title>
     <style>
+
+        
+        /*function infiniti bar*/
+        @keyframes mymove {
+        from {left: -100%;}
+        to {left: 80%;}
+        }
+
+        /*الخط الأميري*/
+        @import url(http://fonts.googleapis.com/earlyaccess/amiri.css);
+
+        /*الخط الكوفي*/
+        @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+        /*خط ثابت*/
+        @import url(http://fonts.googleapis.com/earlyaccess/thabit.css);
+
+        /*خط شهرزاد*/
+        @import url(http://fonts.googleapis.com/earlyaccess/lateef.css);
 
         *{
             box-sizing: border-box;
             padding:0;
             margin:0;
+            -webkit-transition: all 0.5s ease-out;
+            -moz-transition: all 0.5s ease-out;
+            -o-transition: all 0.5s ease-out;
             transition: all 0.5s ease-out;
         }
+
 
         body{
             -webkit-background-image: radial-gradient(circle, #a1a3c7, #c5ad068c, #42cd91);
@@ -21,65 +44,90 @@
             background-color: #EEE;  
         }
 
-       
-        h1{
-            color:rgb(255, 255, 255);
-            text-align:center;
-            position: relative;
-            top:80px;
-
-        
-        }
 
         header {
+            position: relative;
              width:100%;
-             height:200px;
+             height:250px;
             -webkit-background-image: linear-gradient(315deg, #d4418e 0%, #0652c5 74%, #48f16cdb);
             -moz-background-image: linear-gradient(315deg, #d4418e 0%, #0652c5 74%, #48f16cdb);
             -o-background-image: linear-gradient(315deg, #d4418e 0%, #0652c5 74%, #48f16cdb);           
             background-image: linear-gradient(315deg, #b841d4cf 0%, #0652c5 74%, #48f16cdb);
             background-color: #d4418e;
-          
         }
+
+        
+        h1{
+            color:rgb(255, 255, 255);
+            text-align:center;
+            position: relative;
+            top: 116px;
+            font-family:Amiri,"Trebuchet MS", Helvetica, sans-serif;
+            font-weight: 700;
+        }
+
+
+        div.bar {
+            width:100%;
+            background-color:#98cb7d;
+            height: 40px;
+            position: absolute;
+            top: 250px;
+            z-index: -1;
+            -webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+            -moz-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+            -o-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+        }
+
+
+        div.bar p {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            -webkit-animation: mymove 20s infinite;
+            -moz-animation:mymove 20s infinite;
+            -o-animation:mymove 20s infinite;
+            animation:mymove 20s infinite;
+            -webkit-animation-timing-function: linear;
+            -moz-animation-timing-function: linear;
+            -o-animation-timing-function: linear;
+            animation-timing-function: linear;
+            display: flex;
+            align-items: center;
+            color: #0652c5;
+            font-size: 20px;
+            font-family: Lateef, serif;
+            font-weight: 700;
+            /* z-index: -1; */
+        }
+
+        span{
+            color:#791f8a;
+        }
+
 
         nav{
-            width:100%;
-            height:100%;
-            -webkit-background-image: linear-gradient(315deg, #d4418e 0%, #0652c5 74%);
-            -moz-background-image: linear-gradient(315deg, #d4418e 0%, #0652c5 74%);
-            -o-background-image: linear-gradient(315deg, #d4418e 0%, #0652c5 74%);
-            background-image: linear-gradient(315deg, #0652c5 0%, #42bdcc7d 74%);
-             background-color: #0652c5;
+            position: fixed;
+            /* position: relative; */
+            width: 100%;
+            height: 47px;
+            background-color: #31abdc;
             justify-content: center;
             display: flex;
-          
+            top: 2px;
+            -webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+            -moz-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+            -o-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
         }
 
-        .navbar ul ul{
-            display:none;
-          
-        }
 
-        .navbar li:hover > ul {
-            display:block;
-            height:100%;
-   
-        }
-
-        li{
-            justify-content: center;
-            text-align:center;
-            width:200px;
-            list-style: none;
-            float: left;
-        }
-
+        
         h4{
-           
-            background-color: #68a7e6;
-            
+            background-color: #84bef9;
             justify-content: center;
-            height:40px;
+            height:37px;
             width: 86%;
             margin:0 13px;
             display: flex;
@@ -88,21 +136,42 @@
             -moz-border-radius: 0;
             -o-border-radius: 0;
             border-radius: 0;
-            border:1px solid rgb(62, 136, 146);
-
-            
-            
+            border:1px solid rgb(62, 136, 146); 
+            font-family: "Droid Arabic Kufi" , serif;
         }
 
-        h4:hover{
+         /*hover h4*/
+         h4:hover{
             background-color:rgb(139, 240, 125);
             color:rgb(155, 23, 23);
             -webkit-border-radius: 13px;
             -moz-border-radius: 13px;
             -o-border-radius: 13px;
             border-radius: 13px;
-            
         }
+
+
+        nav > ul {position: absolute;  top: 4px;}
+
+
+        .navbar ul ul{display:none;}
+
+        /*li:Hover ul block*/
+        .navbar li:hover > ul {display:block;  height:100%;}
+
+
+        li{
+            justify-content: center;
+            text-align:center;
+            width:200px;
+            list-style: none;
+            float: left;
+            -webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+            -moz-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+            -o-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+        }
+
 
         ul a{
             text-decoration: none;
@@ -116,109 +185,183 @@
             display: flex;
             align-items: center;
             color:rgb(72, 5, 117);
-            
         }
 
+
+        /*hover a*/
         a:hover{
             -webkit-border-radius: 10px;
             -moz-border-radius: 10px;
             -o-border-radius: 10px;
             border-radius: 10px;
             background-color:rgb(126, 221, 114);
-            
             color:rgb(217, 225, 238);
         }
 
+
+        /*hover li a*/
         ul li ul li a:hover {
             background-color:rgb(153, 101, 248);
             -webkit-border-radius: 10px;
             -moz-border-radius: 10px;
             -o-border-radius: 10px;
             border-radius: 10px;
-    
         }
 
-        nav > ul > li > a {
-            background-color: #679fd6;
+
+        nav > ul > li > a { background-color: #77b3ef;}
+
+
+        /*main start*/
+        main{width:100%;  margin-top: 39px;}
+        /*main End*/
+
+
+        /*aside start*/
+        aside.left {
+            width: 23.5%;
+            border: 3px solid #9045c6;
+            clear: both;
+            float: left;
+            height: 200px;
+            margin:1% .75% 1% 1%;
         }
+        /*aside End*/
+
+
+        /*section right start*/
+        section.right {
+            width: 73.25%;
+            border: 3px solid #9045c6;
+            float: left;
+            height: 200px;
+            margin: 1% 1% 1% .25%;
+        }
+        /*section right End*/
+
+
+        /*Footer Stert*/
+        footer{
+            clear:both;
+            width:98%;
+            border: 3px solid #9045c6;
+            height: 200px;
+            margin:1% 1% 1% 1%;
+        }
+        /*Footer End*/
 
 
     </style>
 </head>
 <body>
+    <!--Header Start-->
     <header>
         <h1>مواقع هامة لكل شخص</h1>
+
+        <!--Nav Bar Start-->
+        <nav class="navbar">
         
+            <ul>       
+                <li>
+                    <h4>افضل مواقع البنوك الالكترونية</h4>
+                    <ul>   
+                        <li><a href="https://www.skrill.com/de/" target="blank">Skrill</a></li><br>
+                        <li><a href="https://www.neteller.com/de" target="blank">Neteller</a></li><br>
+                        <li><a href="https://www.paypal.com/de/home" target="blank">Paypal</a></li><br>
+                        <li><a href="https://www.sparkasse.de/" target="blank">Ebay</a></li><br>
+                        <li><a href="https://www.advanzia.com/de-de/" target="blank">Advanzia</a></li><br>
+                        <li><a href="https://www.klarna.com/de/" target="blank">Klarna</a></li><br>
+                    </ul>
+                </li>
+    
+                
+                <li>
+                    <h4>افضل مواقع البنوك الالكترونية</h4>
+                    <ul>                      
+                        <li><a href="https://www.skrill.com/de/" target="blank">Skrill</a></li><br>
+                        <li><a href="https://www.neteller.com/de" target="blank">Neteller</a></li><br>
+                        <li><a href="https://www.paypal.com/de/home" target="blank">Paypal</a></li><br>
+                        <li><a href="https://www.sparkasse.de/" target="blank">Ebay</a></li><br>
+                        <li><a href="https://www.advanzia.com/de-de/" target="blank">Advanzia</a></li><br>
+                        <li><a href="https://www.klarna.com/de/" target="blank">Klarna</a></li><br>
+                    </ul>
+                </li>
+    
+                <li>
+                    <h4>افضل مواقع التسوق</h4>
+                    <ul>
+                        <li><a href="https://www.dhl.de/de/privatkunden.html#" target="blank">DHL</a></li>
+                        <li><a href="https://findmymobile.samsung.com/" target="blank">Findmymobile</a></li>
+                        <li><a href="https://www.amazon.de/" target="blank">Fmazon</a></li>
+                        <li><a href="https://portal.lbb.de/site/amazon/karteninhaber" target="blank">Fmazon karteninhaber</a></li>
+                        <li><a href="https://www.real.de/" target="blank">Real</a></li>
+                        <li><a href="https://www.saturn.de/" target="blank">Saturn</a></li>
+                        <li><a href="https://www.mediamarkt.de/" target="blank">Mediamarkt</a></li>
+                        <li><a href="https://www.ebay.de/" target="blank">Ebay</a></li>
+                        <li><a href="https://www.idealo.de/" target="blank">Idealo</a></li>
+                        <li><a href="https://www.baur.de/" target="blank">Baur</a></li>
+                        <li><a href="https://www.deinhandy.de/" target="blank">Deinhandy</a></li>
+                        <li><a href="https://www.blau.de/" target="blank">Blau</a></li></p>
+                        <li><a href="https://www.yourfone.de/" target="blank">Yourfone</a></li>
+                        <li><a href="https://www.samsung.com/de/" target="blank">Samsung</a></li>
+                        <li><a href="https://www.wish.com/" target="blank">Wish</a></li>
+                    </ul>
+                </li>
+    
+                <li>
+                    <h4>الترجمة</h4>
+                    <ul>
+                        <li><a href="https://translate.google.de/" target="blank">Google Translate</a><li/>
+                        <li><a href="https://mobile.reverso.net/" target="blank">Reverso Translate</a></li>
+                    </ul>
+                </li>
+    
+                <li>
+                    <h4>مواقع التواصل الاجتماعي</h4>
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="blank">Facebook</a></li>
+                        <li><a href="https://www.twitter.com/" target="blank">Twitter</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!--Nav Bar End-->
+
+       
+        <!--Div Bar Start-->
+        <div class="bar">
+            <p>أهلاً وسهلاً بكم في أكاديمية <span>&nbsp; King Pro &nbsp;</span> التعليمية , نهتم بجميع المجالات التكنلوجية , نتمنى لكم دوام الفائدة والمتعة</p>
+        </div>
+        <!--Div Bar End-->
     </header>
+    <!--Header End-->
 
-    <nav class="navbar">
-        <ul>
-            <li>
-                <a><h4>افضل مواقع البنوك الالكترونية</h3></a>
-                <ul>
-                        
-                    <li><a href="https://www.skrill.com/de/" target="blank">Skrill</a></li><br>
-                    <li><a href="https://www.neteller.com/de" target="blank">Neteller</a></li><br>
-                    <li><a href="https://www.paypal.com/de/home" target="blank">Paypal</a></li><br>
-                    <li><a href="https://www.sparkasse.de/" target="blank">Ebay</a></li><br>
-                    <li><a href="https://www.advanzia.com/de-de/" target="blank">Advanzia</a></li><br>
-                    <li><a href="https://www.klarna.com/de/" target="blank">Klarna</a></li><br>
-                </ul>
-            </li>
-
-            <li>
-                <a><h4>افضل مواقع التسوق</h3></a>
-                <ul>
-                    <li><a href="https://www.dhl.de/de/privatkunden.html#" target="blank">DHL</a></li>
-                    <li><a href="https://findmymobile.samsung.com/" target="blank">Findmymobile</a></li>
-                    <li><a href="https://www.amazon.de/" target="blank">Fmazon</a></li>
-                    <li><a href="https://portal.lbb.de/site/amazon/karteninhaber" target="blank">Fmazon karteninhaber</a></li>
-                    <li><a href="https://www.real.de/" target="blank">Real</a></li>
-                    <li><a href="https://www.saturn.de/" target="blank">Saturn</a></li>
-                    <li><a href="https://www.mediamarkt.de/" target="blank">Mediamarkt</a></li>
-                    <li><a href="https://www.ebay.de/" target="blank">Ebay</a></li>
-                    <li><a href="https://www.idealo.de/" target="blank">Idealo</a></li>
-                    <li><a href="https://www.baur.de/" target="blank">Baur</a></li>
-                    <li><a href="https://www.deinhandy.de/" target="blank">Deinhandy</a></li>
-                    <li><a href="https://www.blau.de/" target="blank">Blau</a></li></p>
-                    <li><a href="https://www.yourfone.de/" target="blank">Yourfone</a></li>
-                    <li><a href="https://www.samsung.com/de/" target="blank">Samsung</a></li>
-                    <li><a href="https://www.wish.com/" target="blank">Wish</a></li>
-                </ul>
-            </li>
-
-            <li>
-                <a><h4>الترجمة</h3></a>
-                <ul>
-                    <li><a href="https://translate.google.de/" target="blank">Google Translate</a><li/>
-                    <li><a href="https://mobile.reverso.net/" target="blank">Reverso Translate</a></li>
-                </ul>
-            </li>
-
-            <li>
-                <a><h4>مواقع التواصل الاجتماعي</h3></a>
-                <ul>
-                    <li><a href="https://www.facebook.com/" target="blank">Facebook</a></li>
-                    <li><a href="https://www.twitter.com/" target="blank">Twitter</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
        
 
+    <!--Main Start-->
     <main>
+        <!--Aside Left Start-->
         <aside class="left">
-            
+            <h2>المحتوى الإضافي</h2>
         </aside>
+        <!--Aside left End-->
 
+
+        <!--Section Right Start-->
         <section class="right">
-
+            <h2>المحتوى الرئيسي</h2>
         </section>
+        <!--Section Right End-->
+
     </main>
+     <!--Main End-->
 
+
+    <!--Footer Start-->
     <footer>
-
+        <h2>قسم التواصل والمعلومات</h2>
     </footer>
+    <!--Footer End-->
 
 
 </body>
